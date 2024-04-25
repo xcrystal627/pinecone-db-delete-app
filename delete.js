@@ -10,8 +10,8 @@ async function initPinecone() {
      pinecone.projectName  = 'ai-legal-officer'
      
      await pinecone.init({
-        environment: 'asia-northeast1-gcp',
-        apiKey: '1fec351b-4c1d-404d-8186-86a6b42f3b9e', 
+        environment: '',
+        apiKey: '', 
      });
 
      return pinecone;
