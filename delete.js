@@ -7,7 +7,7 @@ const { DeleteOperationRequest } =  require('@pinecone-database/pinecone');
 async function initPinecone() {
   try {
      const pinecone = new PineconeClient();
-     pinecone.projectName  = 'ai-legal-officer'
+     pinecone.projectName  = ''
      
      await pinecone.init({
         environment: '',
@@ -25,7 +25,7 @@ const main = async () => {
   
 //   client = await initPinecone();
 
-//   const index = client.Index('ai-legal-officer');
+//   const index = client.Index('');
   
 // //  await index.delete(option);
   // try {
@@ -50,7 +50,7 @@ const main = async () => {
          }
 
          const pinecone = await initPinecone();
-         const index = pinecone.Index('ai-legal-officer');
+         const index = pinecone.Index(');
 
          await index.delete1(option)
 
